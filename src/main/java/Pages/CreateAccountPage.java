@@ -22,9 +22,8 @@ public class CreateAccountPage {
         //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.findElement(emailfield).sendKeys(email);
     }
-    public AccountMessagePage clickCreate(){
+    public void clickCreate(){
         driver.findElement(createButton).click();
-        return new AccountMessagePage(driver);
     }
 
 }
