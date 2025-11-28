@@ -8,6 +8,5 @@ public class MoreDropDownTest extends RunTestBAse {
     public void testMore(){
         homePage.clickRemovePopUp();
         var morepage = homePage.clickMore();
-        //morepage.getDropDown();
     }
 }
