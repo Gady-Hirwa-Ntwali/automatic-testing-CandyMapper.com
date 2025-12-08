@@ -10,7 +10,8 @@ public class MoreDropDownpage {
     public MoreDropDownpage(WebDriver driver){
         this.driver = driver;
     }
-    public void getDropDown(){
+    public HalloweenPage getDropDown(){
         driver.findElement(By.cssSelector("#more-68 > li:nth-child(4) > a")).click();
+        return new HalloweenPage(driver);
     }
 }

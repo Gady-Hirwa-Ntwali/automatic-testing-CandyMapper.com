@@ -12,6 +12,7 @@ public class HomePage {
     private By joinUsLink = By.cssSelector("#bs-2 > span > a");
     private By moreLink = By.cssSelector("#\\32 ");
     private By britishLink = By.cssSelector("#nav-67 > li:nth-child(3) > a");
+
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
