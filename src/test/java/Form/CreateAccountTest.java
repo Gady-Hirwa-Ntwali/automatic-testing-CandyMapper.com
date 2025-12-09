@@ -12,6 +12,9 @@ public class CreateAccountTest extends RunTestBAse {
             var joinUs = homePage.clickJoinUsLink();
             var createAccount = joinUs.clickCreateAccount();
             createAccount.enterCridentials("Hirwa", "Gady", "hirwagad767@gmail.com");
-            createAccount.clickCreate();
+           var text =  createAccount.clickCreate();
+           assertEquals(text.confirmationMessage(),
+                   "You're almost there! We sent an email to hirwagad767@gmail.com with a link to activate your account. Please check your email and click the activation link.",
+                   "Incorrect confirmation message");
     }
 }

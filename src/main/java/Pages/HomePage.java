@@ -19,7 +19,7 @@ public class HomePage {
         this.driver = driver;
     }
     public void clickRemovePopUp(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(removePop));
         driver.findElement(removePop).click();
     }
@@ -32,7 +32,7 @@ public class HomePage {
         return new MoreDropDownpage(driver);
     }
     public void clickBritishCompanyLink(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.findElement(britishLink).click();
     }
 }

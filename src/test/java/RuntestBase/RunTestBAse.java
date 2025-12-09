@@ -16,8 +16,8 @@ public class RunTestBAse {
         driver.get("https://candymapper.com/");
         homePage = new HomePage(driver);
     }
-    @AfterClass
-    public void stopRun(){
-        driver.quit();
-    }
+//    @AfterClass
+//    public void stopRun(){
+//        driver.quit();
+//    }
 }
